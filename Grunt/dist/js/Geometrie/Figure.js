@@ -1,1 +1,0 @@
-!function(){"use strict";function a(a,b){this.x=a,this.y=b}a.prototype.draw=function(){return"draw"},this.Figure=a}();

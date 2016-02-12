@@ -1,14 +1,14 @@
 (function (global) {
-    'use strict';
+  'use strict';
 
-    function Figure(x, y) {
-        this.x = x;
-        this.y = y;
-    }
+  function Figure(x, y) {
+    this.x = x;
+    this.y = y;
+  }
 
-    Figure.prototype.draw = function () {
-        return 'draw';
-    };
+  Figure.prototype.draw = function () {
+    return 'draw';
+  };
 
-    global.Figure = Figure;
+  global.Figure = Figure;
 }(this));

@@ -1,1 +1,0 @@
-!function(){"use strict";function a(a,b,c){Figure.apply(this,arguments),this.rayon=c}a.prototype.aire=function(){return this.rayon*this.rayon*Math.PI},this.Cercle=a}();

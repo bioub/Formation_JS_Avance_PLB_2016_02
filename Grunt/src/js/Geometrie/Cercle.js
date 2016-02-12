@@ -1,15 +1,14 @@
 (function (global) {
-    'use strict';
+  'use strict';
 
-    function Cercle(x, y, rayon) {
-        Figure.apply(this, arguments);
-        this.rayon = rayon;
-    }
+  function Cercle(x, y, rayon) {
+    Figure.apply(this, arguments);
+    this.rayon = rayon;
+  }
 
+  Cercle.prototype.aire = function () {
+    return this.rayon * this.rayon * Math.PI;
+  };
 
-    Cercle.prototype.aire = function () {
-        return this.rayon * this.rayon * Math.PI;
-    };
-
-    global.Cercle = Cercle;
+  global.Cercle = Cercle;
 }(this));
