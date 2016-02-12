@@ -9,7 +9,7 @@ class Carre extends Figure {
     }
 
     aire() {
-        return this.cote * this.cote;
+        return this.cote * this.coteX;
     }
 }
 

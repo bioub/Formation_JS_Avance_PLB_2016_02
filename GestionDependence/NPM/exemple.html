@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form id="convertisseur">
+        Montant :
+        <input name="montant">
+        <br>
+        Conversion euros vers
+        <select name="dest">
+            <option value="dollar">$</option>
+            <option value="yen">¥</option>
+        </select>
+        <button type="submit">Convertir</button>
+    </form>
+    <div id="resultats"></div>
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    <script>
+        System.defaultJSExtensions = true;
+
+        System.config({
+            // or 'traceur' or 'typescript'
+            transpiler: 'babel',
+            map: {
+                babel: 'node_modules/babel/dist/browser.js'
+            },
+            // or traceurOptions or typescriptOptions
+            babelOptions: {
+
+            }
+        });
+
+        System.import('./main.js');
+    </script>
+</body>
+</html>
